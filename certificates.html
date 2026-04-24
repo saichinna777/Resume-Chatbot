@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Saikiran Budda – Certifications</title>
+  <link href="https://fonts.googleapis.com/css2?family=Syne:wght@400;600;700;800&family=DM+Mono:wght@300;400;500&display=swap" rel="stylesheet"/>
+  <style>
+    :root { --bg:#0a0a0f;--card:#16161f;--border:#2a2a3a;--accent:#6c63ff;--accent2:#00e5c0;--text:#e8e8f0;--muted:#7070a0; }
+    *{box-sizing:border-box;margin:0;padding:0;}
+    body{background:var(--bg);color:var(--text);font-family:'DM Mono',monospace;min-height:100vh;padding:40px 20px 60px;}
+    body::before{content:'';position:fixed;top:-50%;left:-50%;width:200%;height:200%;background:radial-gradient(ellipse at 20% 20%,rgba(108,99,255,.06) 0%,transparent 50%),radial-gradient(ellipse at 80% 80%,rgba(0,229,192,.04) 0%,transparent 50%);pointer-events:none;z-index:0;}
+    .wrap{max-width:760px;margin:0 auto;position:relative;z-index:1;}
+    header{text-align:center;margin-bottom:40px;}
+    .avatar{width:56px;height:56px;border-radius:14px;background:linear-gradient(135deg,var(--accent),var(--accent2));display:flex;align-items:center;justify-content:center;font-family:'Syne',sans-serif;font-weight:800;font-size:20px;color:#fff;margin:0 auto 16px;box-shadow:0 0 24px rgba(108,99,255,.3);}
+    header h1{font-family:'Syne',sans-serif;font-weight:700;font-size:24px;background:linear-gradient(90deg,var(--text),var(--accent2));-webkit-background-clip:text;-webkit-text-fill-color:transparent;margin-bottom:6px;}
+    header p{font-size:12px;color:var(--muted);letter-spacing:1px;text-transform:uppercase;}
+    .section-title{font-family:'Syne',sans-serif;font-size:11px;font-weight:600;letter-spacing:2px;text-transform:uppercase;color:var(--accent2);margin-bottom:14px;padding-bottom:8px;border-bottom:1px solid var(--border);}
+    .grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(320px,1fr));gap:12px;margin-bottom:28px;}
+    .cert-card{background:var(--card);border:1px solid var(--border);border-radius:14px;padding:16px 18px;text-decoration:none;display:flex;gap:12px;align-items:center;transition:all .22s;}
+    .cert-card:hover{border-color:var(--accent);transform:translateY(-2px);box-shadow:0 8px 24px rgba(108,99,255,.15);}
+    .cert-icon{width:38px;height:38px;border-radius:10px;flex-shrink:0;display:flex;align-items:center;justify-content:center;font-size:18px;}
+    .aws{background:rgba(255,153,0,.12);} .azure{background:rgba(0,120,212,.12);} .ibm{background:rgba(0,115,232,.12);} .databricks{background:rgba(255,60,0,.12);} .dl{background:rgba(0,229,192,.12);}
+    .cert-body{flex:1;}
+    .cert-name{font-size:13px;font-weight:500;color:var(--text);margin-bottom:3px;line-height:1.4;font-family:'Syne',sans-serif;}
+    .cert-issuer{font-size:11px;color:var(--muted);}
+    .arr{color:var(--accent);font-size:15px;opacity:.6;transition:opacity .2s;}
+    .cert-card:hover .arr{opacity:1;}
+    .back-link{display:inline-flex;align-items:center;gap:6px;font-size:12px;color:var(--muted);text-decoration:none;margin-bottom:28px;transition:color .2s;}
+    .back-link:hover{color:var(--accent2);}
+    footer{text-align:center;margin-top:48px;font-size:11px;color:var(--muted);}
+  </style>
+</head>
+<body>
+<div class="wrap">
+  <a class="back-link" href="./index.html">← Back to Resume Assistant</a>
+  <header>
+    <div class="avatar">SB</div>
+    <h1>Saikiran Budda</h1>
+    <p>Professional Certifications</p>
+  </header>
+
+  <div class="section-title">Amazon Web Services</div>
+  <div class="grid">
+    <a class="cert-card" href="https://aws.amazon.com/certification/certified-machine-learning-specialty/" target="_blank">
+      <div class="cert-icon aws">🏅</div>
+      <div class="cert-body"><div class="cert-name">AWS ML – Specialty</div><div class="cert-issuer">Amazon Web Services</div></div>
+      <div class="arr">↗</div>
+    </a>
+    <a class="cert-card" href="https://www.credly.com/org/amazon-web-services/badge/aws-cloud-quest-generative-ai" target="_blank">
+      <div class="cert-icon aws">🏅</div>
+      <div class="cert-body"><div class="cert-name">AWS Cloud Quest – Generative AI Architect</div><div class="cert-issuer">Amazon Web Services</div></div>
+      <div class="arr">↗</div>
+    </a>
+  </div>
+
+  <div class="section-title">Microsoft</div>
+  <div class="grid">
+    <a class="cert-card" href="https://learn.microsoft.com/en-us/credentials/certifications/azure-ai-engineer/" target="_blank">
+      <div class="cert-icon azure">🏅</div>
+      <div class="cert-body"><div class="cert-name">Microsoft Azure AI Engineer Associate</div><div class="cert-issuer">Microsoft</div></div>
+      <div class="arr">↗</div>
+    </a>
+  </div>
+
+  <div class="section-title">IBM</div>
+  <div class="grid">
+    <a class="cert-card" href="https://www.coursera.org/learn/sql-data-science" target="_blank">
+      <div class="cert-icon ibm">🏅</div>
+      <div class="cert-body"><div class="cert-name">Databases and SQL for Data Science</div><div class="cert-issuer">IBM · Coursera</div></div>
+      <div class="arr">↗</div>
+    </a>
+  </div>
+
+  <div class="section-title">Databricks</div>
+  <div class="grid">
+    <a class="cert-card" href="https://www.databricks.com/learn/training/generative-ai-fundamentals-accreditation" target="_blank">
+      <div class="cert-icon databricks">🏅</div>
+      <div class="cert-body"><div class="cert-name">Generative AI Fundamentals</div><div class="cert-issuer">Databricks</div></div>
+      <div class="arr">↗</div>
+    </a>
+  </div>
+
+  <div class="section-title">DeepLearning.AI</div>
+  <div class="grid">
+    <a class="cert-card" href="https://www.coursera.org/learn/generative-ai-with-llms" target="_blank">
+      <div class="cert-icon dl">🏅</div>
+      <div class="cert-body"><div class="cert-name">Generative AI with Large Language Models</div><div class="cert-issuer">DeepLearning.AI · Coursera</div></div>
+      <div class="arr">↗</div>
+    </a>
+  </div>
+
+  <footer>Saikiran Budda &middot; saikranbudda@gmail.com</footer>
+</div>
+</body>
+</html>
